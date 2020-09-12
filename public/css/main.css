@@ -1,0 +1,56 @@
+/* Imports */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+/* Imports */
+
+
+.welcome 
+ 
+    {
+        background-image: url("../imgs/imgPark2.png"); 
+        
+        background-repeat: no-repeat;
+        background-size:100%;
+        background-position:center;
+        bottom: 0;
+        color: black;
+        left: 0;
+        overflow: auto;
+        padding: 3em;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        background-size: cover;
+        
+    }
+#maintitle
+{
+
+    color:rgb(31, 29, 29);
+   
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: transparent;
+    color: #1e2020;
+    font-family: 'Lucida Console', Monospace;
+    margin-top: 23vh;
+    font-size: 150px;
+}   
+
+
+.welcome_btn 
+{
+    background-color: #525a5a;
+    color:rgb(0, 0, 0);
+    display: inline-block;  
+    border:none;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 52px; 
+    margin-top: 15vh;
+    border-radius:1rem;
+
+}
+
+
