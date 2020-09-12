@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0c0458cd7bf0aa562d0e4f09f6d9d59",
+    "content-hash": "5feca852fe153420ab9aa244b271a9a9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1329,6 +1329,55 @@
                 "php"
             ],
             "time": "2020-08-30T16:15:20+00:00"
+        },
+        {
+            "name": "onecentlin/laravel-adminer",
+            "version": "4.7.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/onecentlin/laravel-adminer.git",
+                "reference": "b17a3413c0275e1061d2acaf197d973725447426"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/onecentlin/laravel-adminer/zipball/b17a3413c0275e1061d2acaf197d973725447426",
+                "reference": "b17a3413c0275e1061d2acaf197d973725447426",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "~5.0|~6.0|~7.0",
+                "illuminate/routing": "~5.0|~6.0|~7.0",
+                "illuminate/support": "~5.0|~6.0|~7.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Onecentlin\\Adminer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Winnie Lin",
+                    "email": "onecentlin@gmail.com"
+                }
+            ],
+            "description": "Laravel Adminer Database Manager",
+            "keywords": [
+                "adminer",
+                "database",
+                "laravel5",
+                "laravel6",
+                "laravel7",
+                "management",
+                "mysql",
+                "sqlite"
+            ],
+            "time": "2020-06-27T09:48:08+00:00"
         },
         {
             "name": "opis/closure",
