@@ -1,0 +1,53 @@
+body{
+    background-color: lightgray;
+}
+
+
+.spot{
+    background-color: black;
+    height: 100vh;
+    display:inline-block;
+    margin-right: 88vw;
+}
+
+ul {
+    margin: 0;
+    padding: 0  ;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    }
+
+    ul li {
+        position: relative;
+        }
+
+        li ul {
+            position: absolute;
+            left: 10vw;
+            top: 0;
+            display: none;
+            }
+    
+
+            ul li a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                
+                font-family: 'Lucida Console', Monospace;
+                
+                background:black;
+                font-size: x-large;
+                padding: 12px;
+                border: 1px solid black;
+             }
+             li:hover ul { display: block; }
+
+
+             ul li a:hover{
+                text-decoration:none;
+                color: black;
+                background: white;
+             }
+              

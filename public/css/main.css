@@ -40,17 +40,23 @@
 
 .welcome_btn 
 {
-    background-color: #525a5a;
-    color:rgb(0, 0, 0);
+    background-color:transparent;
+    color:rgb(161, 163, 24);
     display: inline-block;  
     border:none;
     text-decoration: none;
     padding-left: 5px;
     padding-right: 5px;
-    font-size: 52px; 
-    margin-top: 15vh;
+    font-size: 40px;  
+    margin-top: 23vh;
     border-radius:1rem;
+    margin-right: 01vw;
+
+    
 
 }
 
+.welcome_btn:hover{
+    color:black;
+}
 
