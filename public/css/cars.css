@@ -1,5 +1,6 @@
 body{
     background-color: lightgray;
+    
 }
 
 
@@ -24,9 +25,10 @@ ul {
 
         li ul {
             position: absolute;
-            left: 10vw;
+            left: 12vw;
             top: 0;
             display: none;
+            
             }
     
 
@@ -40,7 +42,7 @@ ul {
                 background:black;
                 font-size: x-large;
                 padding: 12px;
-                border: 1px solid black;
+                border: 0.5px solid rgb(0, 0, 0);
              }
              li:hover ul { display: block; }
 
@@ -50,4 +52,11 @@ ul {
                 color: black;
                 background: white;
              }
+
+div.mapa{
+    width: 150px;
+	display: inline-block;
+
+
+}
               
