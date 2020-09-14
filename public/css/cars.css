@@ -8,7 +8,9 @@ body{
     background-color: black;
     height: 100vh;
     display:inline-block;
-    margin-right: 88vw;
+    width: 12vw;
+    
+ 
 }
 
 ul {
@@ -53,10 +55,27 @@ ul {
                 background: white;
              }
 
-div.mapa{
-    width: 150px;
-	display: inline-block;
 
+
+div.mapa{
+    position:absolute; 
+    top: 20vh; 
+    left:30vw;
+  
 
 }
-              
+img{
+    width:65%;
+  
+    
+}
+
+#mapTitle{
+    color:rgb(31, 29, 29);
+    background-color: transparent;
+    color: #1e2020;
+    font-family: 'Lucida Console', Monospace;
+    margin-left: 5vw;
+    font-weight: bold;
+
+}
