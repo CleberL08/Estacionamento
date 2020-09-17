@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Usuario;
+use App\Models\Carro;
 
 class RegisterController extends Controller
 {
@@ -23,7 +25,10 @@ class RegisterController extends Controller
      */
     public function create()
     {
-        return view('registerUser');
+        
+        $user = Usuario::all();
+        $car = Carro::all();
+        return view('registerUser',compact('user'),compact('car'));
     }
 
     /**
@@ -34,7 +39,21 @@ class RegisterController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       
+        
+        $user = new Usuario;
+        $user->nome = $request->nome;
+        $user->dataVencimento = $request->dataVencimento;
+        $user->save(); 
+
+        $car = new Carro;
+        $car->placa = $request->placa;
+        $car->cor = $request->cor;
+        $car->marca = $request->marca;
+        $car->modelo = $request->modelo;
+        $car->save();
+
+        return redirect()->action('CarsController@ShowCars');
     }
 
     /**
