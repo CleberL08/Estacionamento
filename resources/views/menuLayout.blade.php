@@ -8,7 +8,7 @@
         <li><a  ><i class="fa fa-user w3-xxlarge"></i><br>Clientes</a>
             <ul>
             <li><a href="{{route('registerUser')}}">Cadastrar cliente</a></li>
-                <li><a href="#">Ver clientes</a></li>
+                <li><a href="{{route('userLists')}}">Ver clientes</a></li>
                 <li><a href="#">Data de pagamento</a></li>
                 <li><a href="#">Remover Cliente</a></li>
               </ul>

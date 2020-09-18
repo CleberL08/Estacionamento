@@ -45,4 +45,6 @@ class Vaga extends Model
 	{
 		return $this->belongsTo(Carro::class, 'carro_idCarro');
 	}
+
+	
 }

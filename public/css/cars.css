@@ -16,9 +16,13 @@
 .spot{
     background-color: #1c1c1c;
     height: 100%;
-    display:block;
+    display:inline-block;
     width: 12vw;
-    position:fixed!important;
+    
+    position: fixed;
+    
+
+
 }
 
 ul {

@@ -1,4 +1,5 @@
 <?php
+use Carbon\Carbon;
 
 use Illuminate\Support\Facades\Route;
 
@@ -18,4 +19,5 @@ Route::get('/', 'HomeController@Home')->name('Home');
 Route::get('/carros','CarsController@ShowCars')->name('ShowCar');
 
 Route::get('/carros/cadastrar-clientes','RegisterController@create')->name('registerUser');
-Route::post('/carros/cadastrar-clientes','RegisterController@store');   
+Route::post('/carros/cadastrar-clientes','RegisterController@store');
+Route::get('/carros/ver-clientes','RegisterController@index')->name('userLists');
