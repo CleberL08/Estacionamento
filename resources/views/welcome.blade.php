@@ -9,7 +9,7 @@
       />
         <link rel="stylesheet" href="{{asset('css/main.css')}}">
        
-
+        @extends('layout')
       
     </head>
     <body>
@@ -18,7 +18,8 @@
             
             <h1 id="maintitle"; class="animate__animated animate__backInDown"> Estacionamento</h1> 
         <a type="button" href="{{route('ShowCar')}}"  class="welcome_btn "> 
-                Entrar
+             <span class="glyphicon glyphicon-lock">
+                
             </a>
             
     

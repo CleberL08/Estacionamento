@@ -3,18 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Usuario;
+use App\Models\Carro;
+use App\Models\Vaga;
+use Carbon\Carbon;
 
-
-class CarsController extends Controller
+class RegisterController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function ShowCars()
+    public function index()
     {
-        return view('cars');
+        $user = Usuario::all();
+        $car = Carro::all();
+        $vaga = Vaga::all();
+        return view('userLists',compact('user'),compact('car'));
     }
 
     /**
@@ -24,7 +30,9 @@ class CarsController extends Controller
      */
     public function create()
     {
-        //
+        
+     
+        return view('registerUser');
     }
 
     /**
@@ -35,7 +43,29 @@ class CarsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       
+
+        $user = new Usuario;
+        $user->nome = $request->nome;
+        $user->dataVencimento = $request->dataVencimento;
+        $user->save(); 
+
+        $car = new Carro;
+        $car->placa = $request->placa;
+        $car->cor = $request->cor;
+        $car->marca = $request->marca;
+        $car->modelo = $request->modelo;
+        $car->save();
+
+        $vaga = new Vaga;
+        $vaga->cliente_idCliente = $user->idCliente;
+        $vaga->carro_idCarro = $car->idCarro;
+        $vaga->occupied = $request->occupied;
+        $vaga->save();
+        
+;        
+
+        return redirect()->action('CarsController@ShowCars');
     }
 
     /**
@@ -46,7 +76,7 @@ class CarsController extends Controller
      */
     public function show($id)
     {
-        //
+      
     }
 
     /**
@@ -82,4 +112,8 @@ class CarsController extends Controller
     {
         //
     }
+
+    
+
+    
 }

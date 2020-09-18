@@ -1,2 +1,12 @@
-@extends('layout')
-<a type="button" href="{{route('Home')}}" class="welcome_btn">Voltar</a>
+@extends('menuLayout')
+
+
+<div class="mapa">
+    <h1 id="mapTitle">Mapa do Estacionamento</h1>   
+    <img src=".\imgs\carsSpots\parking.png" >
+    
+</div> 
+
+
+
+    
